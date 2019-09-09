@@ -6,18 +6,12 @@ import {CartContext} from '../contexts/CartContext';
 // 
 
 const Item = props => {
-	const { cart } = useContext(CartContext);
+	const { cart, removeItem } = useContext(CartContext);
 
 	console.log("No. of items in cart: ",cart.length);
 	console.log("Items in cart", cart);
 
 
-	const removeItem = (itemId) => {
-		console.log("Remove item id: ", itemId);
-		// console.log("titletest: ", titleTest);
-		// setCart([...cart, cart.filter((index) => index !== itemId)]);
-
-	}
 
 
 	return (
