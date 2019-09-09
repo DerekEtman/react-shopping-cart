@@ -7,7 +7,7 @@ import { ProductContext } from '../contexts/ProductContext';
 import Product from './Product';
 
 const Products = () => {
-	const { products, addItem } = useContext(ProductContext);
+	const { products, addItem, removeItem } = useContext(ProductContext);
 
 
 	return (
@@ -17,6 +17,7 @@ const Products = () => {
 					key={product.id}
 					product={product}
 					addItem={addItem}
+					removeItem={removeItem}
 				/>
 			))}
 		</div>

@@ -6,8 +6,8 @@ import { CartContext } from '../contexts/CartContext.js';
 
 const Navigation = () => {
 	const { cart } = useContext(CartContext);
-	console.log("cart: ", cart);
-	console.log("cart.length: ", cart.length);
+	// console.log("cart: ", cart);
+	// console.log("cart.length: ", cart.length);
 
 	return (
 		<div className="navigation">
